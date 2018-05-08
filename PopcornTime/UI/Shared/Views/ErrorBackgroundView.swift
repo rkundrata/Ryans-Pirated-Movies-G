@@ -17,14 +17,14 @@ class ErrorBackgroundView: UIView {
         let title: String
         switch error.code {
         case -1200:
-            title = "SSL Error".localized
-            helpfulDescription = "It looks like your ISP/Network admin is blocking our servers. You can try again with a VPN to hide your internet traffic from them. Please do so at your own risk".localized
+            title = "SSL Error - CALL RYAN!".localized
+            helpfulDescription = "Tell Ryan the error is: It looks like your ISP/Network admin is blocking our servers. You can try again with a VPN to hide your internet traffic from them.".localized
         case -404:
-            title = "Not found".localized
-            helpfulDescription = "Please check your internet connection and try again.".localized
+            title = "Not found - CALL RYAN!".localized
+            helpfulDescription = "Tell Ryan the error is: Please check your internet connection and try again.".localized
         case -1005, -1009:
-            title = "You're Offline".localized
-            helpfulDescription = "Please make sure you have a valid internet connection and try again.".localized
+            title = "You're Offline - CALL RYAN!".localized
+            helpfulDescription = "Tell Ryan the error is: Please make sure you have a valid internet connection and try again.".localized
         default:
             title = "Unknown Error".localized
             helpfulDescription = error.localizedDescription

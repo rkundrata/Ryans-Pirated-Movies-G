@@ -34,7 +34,7 @@ class TVFadeToBlackAnimatedTransitioning: NSObject, UIViewControllerAnimatedTran
         presentedControllerView.isHidden = true
         
         let view = UIView(frame: transitionContext.containerView.bounds)
-        view.backgroundColor = .black
+        view.backgroundColor = .white
         view.alpha = 0.0
         transitionContext.containerView.addSubview(view)
         

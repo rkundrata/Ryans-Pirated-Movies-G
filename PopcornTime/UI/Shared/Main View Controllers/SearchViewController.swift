@@ -100,7 +100,7 @@ class SearchViewController: MainViewController, UISearchBarDelegate {
             let openQuote = Locale.current.quotationBeginDelimiter ?? "\""
             let closeQuote = Locale.current.quotationEndDelimiter ?? "\""
             
-            background.setUpView(title: "No results".localized, description: .localizedStringWithFormat("We didn't turn anything up for %@. Try something else.".localized, "\(openQuote + text + closeQuote)"))
+            background.setUpView(title: "No results yet".localized, description: .localizedStringWithFormat("So far we haven't found anything for %@. But continue typing your search.".localized, "\(openQuote + text + closeQuote)"))
             
             collectionView.backgroundView = background
         }

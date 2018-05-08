@@ -134,11 +134,6 @@ extension ItemViewController: UIViewControllerTransitioningDelegate {
         }
     }
     
-    @IBAction func toggleWatchlist(_ sender: TVButton) {
-        media.isAddedToWatchlist = !media.isAddedToWatchlist
-        sender.setImage(watchlistButtonImage, for: .normal)
-    }
-    
     @IBAction func toggleWatched(_ sender: TVButton) {
         media.isWatched = !media.isWatched
         sender.setImage(watchedButtonImage, for: .normal)

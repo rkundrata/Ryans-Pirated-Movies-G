@@ -105,7 +105,7 @@ public final class UpdateManager: NSObject {
                             UIApplication.shared.openURL(url)
                         }
                     } else {
-                        let instructionsAlert = UIAlertController(title: "Sideloading Instructions".localized, message: "Unfortunately, in-app updates are not available for un-jailbroken devices. Please follow the sideloading instructions available in the PopcornTimeTV repo's wiki.".localized, preferredStyle: .alert)
+                        let instructionsAlert = UIAlertController(title: "Sideloading Instructions".localized, message: "Unfortunately, in-app updates are not available for un-jailbroken devices. Please follow the sideloading instructions available in the Ryan's Pirated Movies repo wiki.".localized, preferredStyle: .alert)
                         instructionsAlert.addAction(UIAlertAction(title: "OK".localized, style: .default, handler: nil))
                         instructionsAlert.show(animated: true)
                     }
